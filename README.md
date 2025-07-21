@@ -1,2 +1,2 @@
-# webpack and JS Module Template
-A template that has basic webpack config and uses js modules
+# Odin Homepage
+A default Homepage that can be edited for other websites, this project showcases responsive design and correct viewing at different screen sizes.
