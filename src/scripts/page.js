@@ -19,7 +19,7 @@ class Page {
             })
         } else {
             utils.toggleClass('#workBtn','disable');
-            utils.toggleClass('#hiddenWork', 'disable');
+            utils.editAttr('#hiddenWork','class', 'cardContainer');
         }
     }
 }

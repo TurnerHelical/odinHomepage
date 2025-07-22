@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(165deg, #91bfec 10%, #F4F4F4 calc(10% + 2px));
+    background-image: linear-gradient(165deg, #91bfec 20%, #F4F4F4 calc(20% + 2px));
 }
 
 #headImage {
@@ -146,12 +146,17 @@ footer img{
 }
 
 @media ( 800px <= width <= 1250px  ) {
+    body {
+        background-image: linear-gradient(165deg, #91bfec 27%, #F4F4F4 calc(27% + 2px));
+    }
+
     #aboutMe {
         display: flex;
         flex-direction: row;
         margin: 70px auto;
         background-color: white;
         max-width: 700px;
+        box-shadow: 1px 1px 3px rgba(0%, 0%, 0%, 40%);
     }
 
     #headImage {
@@ -165,8 +170,9 @@ footer img{
 
     #textBox{
         min-width: 400px;
-        transform: translate(-250px, 40px);
+        transform: translate(-250px, 10px);
     }
+
 }
 
 
