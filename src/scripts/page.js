@@ -10,7 +10,10 @@ class Page {
             loadButton.addEventListener('click', () => {
                 setTimeout(() => {
                     utils.toggleClass('#hiddenWork', 'open'); 
-                    utils.toggleClass('#workBtn', 'disable');  
+                    utils.toggleClass('#workBtn', 'close');
+                    setTimeout(() => {
+                        utils.toggleClass('#workBtn', 'disable');
+                    }, 1200);
                 }, 500);
                             
             })
