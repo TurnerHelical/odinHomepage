@@ -8,9 +8,11 @@ class Page {
         if (viewportWidth < 800) {
             const loadButton = utils.findElement('#workBtn');
             loadButton.addEventListener('click', () => {
-                 const moreWork = utils.findElement('#hiddenWork');
-                 utils.toggleClass('#hiddenWork', 'disable'); 
-                 utils.toggleClass('#workBtn', 'disable');             
+                setTimeout(() => {
+                    utils.toggleClass('#hiddenWork', 'open'); 
+                    utils.toggleClass('#workBtn', 'disable');  
+                }, 500);
+                            
             })
         } else {
             utils.toggleClass('#workBtn','disable');
