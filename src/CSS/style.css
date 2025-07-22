@@ -1,3 +1,53 @@
 body {
-    background-color: rebeccapurple;
+    background-image: linear-gradient(165deg, #91bfec 10%, #F4F4F4 calc(10% + 2px));
+}
+
+img {
+    border: 1px black solid;
+    height: 300px;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#textBox {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#aboutMe p {
+    text-align: center;
+    padding: 0px 10px;
+}
+
+#aboutMe h1{
+    transform: translate(-30px, -50px);
+    font-size: 32px;
+}
+
+#linkCtr {
+    display: flex;
+    gap: 20px;
+    font-size: 32px;
+}
+
+.disable {
+    display: none;
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
