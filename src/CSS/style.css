@@ -133,6 +133,7 @@ footer {
     background-color: #91bfec;
     padding: 10px;
     text-align: center;
+    margin-top: 50px;
 }
 
 #thanks {
@@ -225,6 +226,19 @@ footer img{
         transform: translate(-200px, 10px);
     }
 
+    footer {
+        display: grid;
+        grid-template: 1fr / 2fr 1fr;
+        font-size: 18px;
+    }
+
+    #thanks {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
 }
 
 
