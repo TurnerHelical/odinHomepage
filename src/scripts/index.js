@@ -7,7 +7,4 @@ const utils = new Dom();
 const onLoad = new Page();
 
 onLoad.init();
-window.addEventListener('resize',() => {
-    
-});
-;
+window.addEventListener('resize',onLoad.init);
