@@ -111,16 +111,15 @@ a {
     animation: fadeOut 1s ease;
 }
 
-#hiddenWork {
+.hiddenWork {
     opacity: 0;
     display: none;
 }
 
-#hiddenWork.open {
+.hiddenWork.open {
     display: flex;
     animation: fadeIn 1s 1.3s forwards;
 }
-
 a:hover,
 a:focus{
     animation: scaleIncrease 4s alternate infinite ;
@@ -171,6 +170,59 @@ footer img{
     #textBox{
         min-width: 400px;
         transform: translate(-250px, 10px);
+    }
+
+    .cardContainer {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+    }
+
+    footer {
+        display: grid;
+        grid-template: 1fr / 2fr 1fr;
+        font-size: 18px;
+    }
+
+    #thanks {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+
+
+}
+
+@media (width >= 1250px) {
+
+    .cardContainer {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    }
+
+    #aboutMe {
+        display: flex;
+        flex-direction: row;
+        margin: 70px auto;
+        background-color: white;
+        max-width: 1000px;
+        box-shadow: 1px 1px 3px rgba(0%, 0%, 0%, 40%);
+    }
+
+    #headImage {
+        transform: translate(-40px, 50px);
+    }
+
+    #aboutMe h1 {
+        transform: translate(-200px, -120px);
+        min-width: 220px;
+    }
+
+    #textBox{
+        min-width: 600px;
+        transform: translate(-200px, 10px);
     }
 
 }

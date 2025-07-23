@@ -9,7 +9,7 @@ class Page {
             const loadButton = utils.findElement('#workBtn');
             loadButton.addEventListener('click', () => {
                 setTimeout(() => {
-                    utils.toggleClass('#hiddenWork', 'open'); 
+                    utils.toggleClassForAll('.hiddenWork', 'open'); 
                     utils.toggleClass('#workBtn', 'close');
                     setTimeout(() => {
                         utils.toggleClass('#workBtn', 'disable');
@@ -19,7 +19,7 @@ class Page {
             })
         } else {
             utils.toggleClass('#workBtn','disable');
-            utils.editAttr('#hiddenWork','class', 'cardContainer');
+            utils.toggleClassForAll('.hiddenWork', 'hiddenWork');
         }
     }
 }
