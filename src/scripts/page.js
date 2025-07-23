@@ -36,10 +36,16 @@ class Page {
             if (loadButton.classList.contains('close')) {
                 utils.toggleClass('#workBtn', 'close');
             }
+            if (!loadButton.classList.contains('fresh'))
+                utils.toggleClass('#workBtn', 'fresh')
+            
             const cards = utils.findAllElements('.extraCards')
             cards.forEach((card) => {
                 if (!card.classList.contains('hiddenWork')) {
                   card.classList.add('hiddenWork');
+                }
+                if (card.classList.contains('open')) {
+                    card.classList.remove('open')
                 }
               });
             loadButton.addEventListener('click', this.handleLoadMore)
