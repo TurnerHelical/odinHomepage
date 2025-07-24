@@ -7,9 +7,9 @@ module.exports = {
   entry: "./src/scripts/index.js",
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
     clean: true,
-    publicPath: "./",
+    publicPath: "./"
   },
   devtool: "eval-source-map",
   devServer: {
