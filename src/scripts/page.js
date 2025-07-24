@@ -7,6 +7,7 @@ class Page {
         const viewportWidth = window.innerWidth;
         if (viewportWidth <= 800) {
             const loadButton = utils.findElement('#workBtn')
+            loadButton.removeEventListener('click', this.handleLoadMore);
             loadButton.addEventListener('click', this.handleLoadMore);
         } else if (viewportWidth > 800) {
             utils.toggleClass('#workBtn', 'disable');
