@@ -1,6 +1,20 @@
 body {
-    background-image: linear-gradient(165deg, #91bfec 20%, #F4F4F4 calc(20% + 2px));
+    background-image: linear-gradient(165deg, #4c7a7a, #3f3838 calc(20% + 2px));
 }
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 
 #headImage {
     height: 300px;
@@ -16,6 +30,7 @@ a {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    
 }
 
 #textBox {
@@ -24,14 +39,20 @@ a {
     flex-direction: column;
     align-items: center;
     max-width: 550px;
+    color: #F3F4F6;
 }
 #aboutMe p {
     text-align: center;
     padding: 0px 10px;
+    font-size: 24px;
 }
 
 #aboutMe h1{
     transform: translate(-30px, -50px);
+    font-size: 32px;
+}
+
+#aboutMe h2{
     font-size: 32px;
 }
 
@@ -52,6 +73,11 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+#workWrap {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
 }
 
 .cardContainer {
@@ -78,6 +104,7 @@ a {
     grid-template: .2fr 1fr / 2fr 1fr;
     align-items: center;
     gap: 10px;
+    background-color:#F3F4F6 ;
 }
 
 .cardInfo h3 {
@@ -131,10 +158,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #91bfec;
+    background-color: #4c7a7a;
     padding: 10px;
     text-align: center;
     margin-top: 50px;
+    color: #fffff0;
 }
 
 #thanks {
@@ -148,7 +176,7 @@ footer img{
 
 @media ( 800px <= width <= 1250px  ) {
     body {
-        background-image: linear-gradient(165deg, #91bfec 27%, #F4F4F4 calc(27% + 2px));
+        background-image: linear-gradient(165deg, #4c7a7a 27%, #3f3838 calc(27% + 2px));
     }
 
     #aboutMe {
@@ -165,13 +193,14 @@ footer img{
     }
 
     #aboutMe h1 {
-        transform: translate(-80px, -120px);
+        transform: translate(-200px, -120px);
         min-width: 220px;
     }
 
     #textBox{
         min-width: 400px;
         transform: translate(-250px, 10px);
+        color: black;
     }
 
     .cardContainer {
@@ -193,11 +222,19 @@ footer img{
         font-size: 32px;
     }
 
+    .card:hover {
+        animation: glow 1s ease-in-out 0ms infinite alternate;;
+    }
+
 
 
 }
 
 @media (width >= 1250px) {
+
+    body {
+        background-image: linear-gradient(165deg, #4c7a7a 27%, #3f3838 calc(27% + 2px));
+    }
 
     .cardContainer {
         display: grid;
@@ -225,6 +262,7 @@ footer img{
     #textBox{
         min-width: 600px;
         transform: translate(-200px, 10px);
+        color: black;
     }
 
     #workBtn:hover{
@@ -232,6 +270,10 @@ footer img{
         background-color: yellow;
         animation-name: buttonSpin;
         animation-duration: 1s;
+    }
+
+    .card:hover {
+        animation: glow 1s ease-in-out 0ms infinite alternate;;
     }
 
     footer {
@@ -253,6 +295,12 @@ footer img{
 
 @keyframes buttonSpin {
     0%{transform: rotate(1turn);}
+}
+
+@keyframes glow {
+    0%{box-shadow: 0 0 3px #f1d140 ;}
+
+    100%{box-shadow: 0 0 10px #f1d140 }
 }
 
 @keyframes scaleIncrease {
